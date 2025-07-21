@@ -3,3 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+/*BODY*/
+body{
+  font-family:'Edu Tas Beginner',  sans-serif;
+  background-image: url(/img/cork.png);
+}
