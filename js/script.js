@@ -38,4 +38,12 @@ const PolaridPhoto = [
     }
 ]
 
+//Recupero gli elementi del dom che mi servono 
+const Polaroidcontainer = document.getElementById('Polaroidcontainer');
+
+// Creo una variabile stringa vuota
+let polaroids = '';
+
+
+
 
