@@ -44,6 +44,11 @@ const Polaroidcontainer = document.getElementById('Polaroidcontainer');
 // Creo una variabile stringa vuota
 let polaroids = '';
 
+// Ciclo gli oggetti nell'array PolaridPhoto
+for (let i = 0; i < PolaridPhoto.length; i++) {
+  // Salvo l'oggetto corrente in una variabile
+  const member = PolaridPhoto[i];
+}
 
 
 
