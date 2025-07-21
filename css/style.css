@@ -4,44 +4,26 @@
   box-sizing: border-box;
 }
 
-
-/*BODY*/
+/*Body*/
 body{
-  font-family:'Edu Tas Beginner',  sans-serif;
-  background-image: url(/img/cork.png);
+ font-family: 'Edu Tas Beginner', sens-serif;
+ background-image: url(/img/cork.png);
 }
-/*HEADER*/
+
+/*Header*/
 header{
   background-image: url(/img/wall.png);
   text-align: center;
-  padding: 20px;
-  }
+}
+h1{ 
+  font-size: 85px;
+  font-weight: 700;
+  padding: 15px;
+}
 
-  h1{
-    font-size: 70px;
-    font-weight: bold;
-  }
+/*Main*/
 
-  /*CONTAINER*/
-  .container{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 
-  /*CARD*/
-  .card{
-    background-color: #fff;
-    height: 385px;
-    width: 300px;
-  }
 
-  .card img{
-    padding: 12px;
-    height: 355px;
-  }
-  p{
-    padding-left: 12px;
-    font-size: 17px;
-  }
-
+ 
 
