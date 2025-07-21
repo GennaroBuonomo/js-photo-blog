@@ -66,6 +66,7 @@ for (let i = 0; i < PolaridPhoto.length; i++) {
         </div>
       </div>`
 }
-
+// Fine del ciclo
+Polaroidcontainer.innerHTML = polaroids;
 
 
