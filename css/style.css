@@ -22,18 +22,26 @@ header{
     font-weight: bold;
   }
 
+  /*CONTAINER*/
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
   /*CARD*/
   .card{
     background-color: #fff;
+    height: 385px;
     width: 300px;
   }
 
   .card img{
-    height: 300px;
-    object-fit: cover;
-    padding: 13px;
+    padding: 12px;
+    height: 355px;
+  }
+  p{
+    padding-left: 12px;
+    font-size: 17px;
   }
 
-  
 
