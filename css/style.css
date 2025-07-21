@@ -21,7 +21,7 @@ header{
     font-size: 70px;
     font-weight: bold;
   }
-
+  /*CONTAINER*/
   /*CARD*/
   .card{
     height: 331px;
@@ -29,6 +29,8 @@ header{
     background-color: #fff;
     align-items: center;
     border-radius: 0px;
+    display: flex;
+    overflow: hidden;
   }
   .card img {
     width: 100%;
