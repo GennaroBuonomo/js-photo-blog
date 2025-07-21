@@ -68,5 +68,6 @@ for (let i = 0; i < PolaridPhoto.length; i++) {
 }
 // Fine del ciclo
 Polaroidcontainer.innerHTML = polaroids;
+  
 
 
