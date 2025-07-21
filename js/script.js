@@ -48,6 +48,23 @@ let polaroids = '';
 for (let i = 0; i < PolaridPhoto.length; i++) {
   // Salvo l'oggetto corrente in una variabile
   const member = PolaridPhoto[i];
+
+  const { id, title, date, url } = member;
+  // mi creo una variabile che conterrà l'html e le informazioni sulle photo
+  polaroids += `<div class="col-12 col-md-4">
+        <!--photo 1-->
+        <div class="polaroid rounded-0">
+          <div>
+            <img class="foto-grande" src="${url}" alt="">
+            <img class="pin-img" src="./img/pin.svg" alt="pin-img">
+            <div class="">
+            <p class="id">${id}</p>
+            <p class="title">${title}</p>
+            <p class="date">${date}</p>
+            </div>
+          </div>
+        </div>
+      </div>`
 }
 
 
