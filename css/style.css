@@ -12,8 +12,25 @@ body{
 }
 /*HEADER*/
 header{
-  font-size: 45px;
   background-image: url(/img/wall.png);
   text-align: center;
   padding: 20px;
   }
+
+  h1{
+    font-size: 70px;
+    font-weight: bold;
+  }
+
+  /*CARD*/
+  .card{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+
