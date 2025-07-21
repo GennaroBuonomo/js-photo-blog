@@ -24,7 +24,7 @@ h1{
 /*Main*/
 .polaroid{
   background-color: #fff;
-  height: 390px;
+  height: 450px;
   width: 328px;
   padding: 15px;
   position: relative;
@@ -36,7 +36,7 @@ h1{
 }
 
 .polaroid p{
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
 }
 
