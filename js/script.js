@@ -38,34 +38,34 @@ const PolaridPhoto = [
     }
 ]
 
-//Recupero gli elementi del dom che mi servono 
+//Recupero il contenitore dove verranno inserite le card
 const Polaroidcontainer = document.getElementById('Polaroidcontainer');
 
-// Creo una variabile stringa vuota
-let polaroids = '';
+// Faccio una richiesta GET 
+axios.get('https://lanciweb.github.io/demo/api/pictures/') 
+  .then(response => {
+    const data = response.data;
+     // Variabile per contenere tutto l'HTML generato
+    let polaroids = '';
 
-// Ciclo gli oggetti nell'array PolaridPhoto
-for (let i = 0; i < PolaridPhoto.length; i++) {
-  // Salvo l'oggetto corrente in una variabile
-  const member = PolaridPhoto[i];
-
-  const { id, title, date, url } = member;
-  // mi creo una variabile che conterrà l'html e le informazioni sulle photo
-  polaroids += `<div class="col-12 col-md-4">
-        <!--photo 1-->
-        <div class="polaroid rounded-0">
-          <div>
-            <img class="foto-grande" src="${url}" alt="">
-            <img class="pin-img" src="./img/pin.svg" alt="pin-img">
-            <div class="">
-            <p class="date">${date}</p>
-            <h2 class="title">${title}</h2>
+    // Ciclo su ogni oggetto dell'array
+    for (let i = 0; i < data.length; i++) {
+      const { title, date, url } = data[i];
+     // Aggiungo un blocco HTML
+      polaroids += `
+        <div class="col-12 col-md-4">
+          <div class="polaroid rounded-0">
+            <div>
+              <img class="foto-grande" src="${url}" alt="">
+              <img class="pin-img" src="./img/pin.svg" alt="pin-img">
+              <div>
+                <p class="date">${date}</p>
+                <h2 class="title">${title}</h2>
+              </div>
             </div>
           </div>
-        </div>
-      </div>`
-}
-// Fine del ciclo
-Polaroidcontainer.innerHTML = polaroids;
-  
-
+        </div>`;
+    }
+     // Inserisco tutto l'HTML generato nel contenitore
+    Polaroidcontainer.innerHTML = polaroids;
+  })
