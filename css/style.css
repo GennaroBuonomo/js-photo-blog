@@ -75,5 +75,13 @@ h2{
 
 /*Nascondo overlay*/
 .hidden{
-  
+  display: none;
+}
+
+/*Immagini dentro overlay*/
+#overlay-img{
+max-width: 90%;
+max-height: 70vh;
+margin-bottom: 20px;
+border: 3px solid #fff;
 }
