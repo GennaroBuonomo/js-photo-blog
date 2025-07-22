@@ -1,5 +1,4 @@
-// Array di oggetti: ogni oggetto rappresenta una foto con titolo, data e URL
-const PolaridPhoto = [
+[
     {
         "id": 1,
         "title": "Skate Park",
@@ -39,7 +38,7 @@ const PolaridPhoto = [
 ]
 
 //Recupero il contenitore dove verranno inserite le card
-const Polaroidcontainer = document.getElementById('Polaroidcontainer');
+const polaroidcontainer = document.getElementById('polaroidcontainer');
 
 // Faccio una richiesta GET 
 axios.get('https://lanciweb.github.io/demo/api/pictures/') 
@@ -51,7 +50,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
     // Ciclo su ogni oggetto dell'array
     for (let i = 0; i < data.length; i++) {
       const { title, date, url } = data[i];
-     // Aggiungo un blocco HTML
+       // Aggiungo un blocco HTML
       polaroids += `
         <div class="col-12 col-md-4">
           <div class="polaroid rounded-0">
@@ -66,6 +65,9 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
           </div>
         </div>`;
     }
-     // Inserisco tutto l'HTML generato nel contenitore
-    Polaroidcontainer.innerHTML = polaroids;
-  })
+
+    polaroidcontainer.innerHTML = polaroids
+});
+
+  
+   
