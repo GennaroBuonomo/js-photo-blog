@@ -69,4 +69,3 @@ for (let i = 0; i < PolaridPhoto.length; i++) {
 Polaroidcontainer.innerHTML = polaroids;
   
 
-
