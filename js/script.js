@@ -58,9 +58,8 @@ for (let i = 0; i < PolaridPhoto.length; i++) {
             <img class="foto-grande" src="${url}" alt="">
             <img class="pin-img" src="./img/pin.svg" alt="pin-img">
             <div class="">
-            <p class="id">${id}</p>
-            <p class="title">${title}</p>
             <p class="date">${date}</p>
+            <h2 class="title">${title}</h2>
             </div>
           </div>
         </div>
