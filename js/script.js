@@ -39,6 +39,11 @@
 
 //Recupero il contenitore dove verranno inserite le card
 const polaroidcontainer = document.getElementById('polaroidcontainer');
+const overlay = document.getElementById('overlay');
+const overlayImg = document.getElementById('overlay-img');
+const closeBtn = document.getElementById('close-btn');
+
+
 
 // Faccio una richiesta GET 
 axios.get('https://lanciweb.github.io/demo/api/pictures/') 
@@ -52,7 +57,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
       const { title, date, url } = data[i];
        // Aggiungo un blocco HTML
       polaroids += `
-        <div class="col-12 col-md-4">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="polaroid rounded-0">
             <div>
               <img class="foto-grande" src="${url}" alt="">
@@ -66,8 +71,24 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
         </div>`;
     }
 
-    polaroidcontainer.innerHTML = polaroids
+    polaroidcontainer.innerHTML = polaroids;
+
+    // Aggiungi event listener per mostrare overlay
+  document.querySelectorAll('.foto-grande').forEach(img => {
+   img.addEventListener('click', () => {
+     overlayImg.src = img.src;
+     overlay.style.display = 'flex';
+    });
+  });
+  
+    // Chiudi overlay con bottone
+  closeBtn.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    overlayImg.src = '';
+  });
 });
+
+
 
   
    

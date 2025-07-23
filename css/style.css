@@ -34,7 +34,6 @@ h2{
   width: 328px;
   padding: 15px;
   position: relative;
-  z-index: 2;
 }
 
 .polaroid img.foto-grande{
@@ -55,6 +54,47 @@ h2{
  transform: translateX(-50%);
  display: block;
  width: 32px;
- 
 }
+
+/*OVERLAY*/
+  #overlay {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Nascondi overlay con classe hidden */
+   #overlay.hidden {
+    display: none;
+  }
+
+  /* Immagine centrata */
+  #overlay-img {
+    max-width: 90%;
+    max-height: 70%;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  /* Bottone chiusura */
+  #close-btn {
+   position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 15px;
+    font-size: 18px;
+    background: #ff4444;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
 
