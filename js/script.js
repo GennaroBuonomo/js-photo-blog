@@ -57,7 +57,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
       const { title, date, url } = data[i];
        // Aggiungo un blocco HTML
       polaroids += `
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-8 col-md-6 col-lg-4">
           <div class="polaroid rounded-0">
             <div>
               <img class="foto-grande" src="${url}" alt="">
