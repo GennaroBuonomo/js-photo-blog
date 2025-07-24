@@ -84,7 +84,6 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
     // Chiudi overlay con bottone
   closeBtn.addEventListener('click', () => {
     overlay.style.display = 'none';
-    overlayImg.src = '';
   });
 });
 
